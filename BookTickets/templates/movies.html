@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Movies
+{% endblock %}
+
+{% block body %}
+    <h1>All Movies</h1>
+    <ul>
+        {% for movie in movies %}
+            <li>
+                <a href="{{url_for('movie', movie_id=movie.id)}}">
+                    {{ movie.title }} at {{ movie.location }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

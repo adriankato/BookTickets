@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Movie
+{% endblock %}
+
+{% block body %}
+    <h1>Movie Details</h1>
+
+    <ul>
+        <li>Movie Title: {{movie.title}}</li>
+        <li>Movie Location: {{movie.location}}</li>
+        <li>Duration: {{movie.duration}}</li>
+    </ul>
+
+    <h2>Customers</h2>
+    <ul>
+        {% for customer in customers %}
+            <li>
+                {{ customer.name }}
+            </li>
+            {% else %}
+            <li>
+                No Customers.
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
