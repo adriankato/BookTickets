@@ -1,2 +1,2 @@
 # BookTickets
-A web app created with Flask-SQLAlchemy + Postgressql. The program simulates the movie booking process.
+A web app created with Flask-SQLAlchemy + Postgresql. The program simulates the movie booking process.
